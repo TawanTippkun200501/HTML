@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>แท็กในการสร้างตาราง</title>
+  </head>
+  <body>
     <h1>ยินดีต้อนรับ สู่เว็บที่ 2 ของเรา</h1>
     <a href="การใช้แท็กพื้นฐาน.html">กลับสู่หน้าหลัก</a>
-</body>
+    <h1>
+      <u
+        ><span style="background-color: aquamarine"
+          >สรุปแท็กในการสร้างตาราง</span
+        ></u
+      >
+    </h1>
+    <ol type="1">
+      <li>table</li>
+      แท็กที่ใช้สำหรับการสร้างเส้นตารางขึ้นมา
+      <br />
+      <br />
+      <li>thead</li>
+      การกำหนดหัวเรื่องในแต่ละคอลัมน์
+      <ul type="disc">
+        <li>< th ></li>
+        คือ แท็กที่จะเขียนลงไปในคอลัมน์
+      </ul>
+      <br />
+      <li>tbody</li>
+      แถว
+      <ul type="disc">
+        <li>tr</li>
+        การสร้างแนวเพิ่มลงมา
+        <li>td</li>
+        การเขียนข้อความหรือเนื้อหาเข้าไปในแถว
+      </ul>
+    </ol>
+    <h2><span style="background-color: aquamarine">สร้างตารางของจริง</span></h2>
+    <table border="1" cellpadding="5">
+      <thead style="background-color:yellow">
+        <th>ลำดับ</th>
+        <th>แท็กต่างๆในสร้างตาราง</th>
+        <th>แท็ที่อยู่ใต้แท็กนั้น</th>
+        <th>แท็ที่อยู่ใต้แท็กนั้นอีก</th>
+        <th>คำอธิบาย</th>
+        <th>คำอบิาย</th>
+        <th>คำอธิบาย</th>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td align="center">1</td>
+          <td>table</td>
+          <td>thead , tbody</td>
+          <td>-</td>
+          <td>table คือ แท็กในการสร้างเส้นตารางรอบแท็ก thead และ tbody</td>
+          <th>-</th>
+          <th>-</th>
+        </tr>
+        <tr>
+          <td align="center">2</td>
+          <td>thead</td>
+          <td>th</td>
+          <td align="center">-</td>
+          <td>thead คือ แท็กที่ใช้สำหรับการกำหนดหัวข้อเรื่องในแต่ละคอลัมน์</td>
+          <td>th คือ แท็กที่เติมเนื้อหาเข้าไปในคอลัมน์ได้</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>tbody</td>
+          <td>tr</td>
+          <td>th</td>
+          <td>tbody คือ แท็กที่ใช้สำหรับการกำหนดตารางของแถว</td>
+          <td>tr คือ การสร้างแนวยาวๆ 1 แนว แบบแนวนอนในตาราง</td>
+          <td>
+            td คือ แท็กที่ใช้ในการเขียนข้อความลงไปในคอลัมน์แนวของแท็ก tr
+            และในการเขียนลงไปแท็ก td ก็จะมีการสวร้างแต่ขึ้นมาในรอบข้อความ
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
